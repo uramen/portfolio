@@ -1,0 +1,6 @@
+@import '../vendor/fontface';
+@include fontFace( 'Lato-Bold','../fonts/Lato-Bold');
+@include fontFace( 'Lato-Medium','../fonts/Lato-Medium');
+@include fontFace( 'Lato-Regular','../fonts/Lato-Regular');
+@include fontFace( 'Lato-Light','../fonts/Lato-Light');
+@include fontFace( 'Lato-Thin','../fonts/Lato-Thin');
