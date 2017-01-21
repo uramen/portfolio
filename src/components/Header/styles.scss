@@ -1,0 +1,52 @@
+.header {
+  background: url("../../images/header-bg.jpg") no-repeat 50% 50%;
+  height: 600px;
+  background-size: cover;
+
+  .container {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 75px;
+
+    &Left {
+      nav {
+        display: flex;
+        justify-content: flex-end;
+
+        a {
+          border: 1px solid white;
+          margin-left: 11px;
+          width: 16px;
+          height: 16px;
+          transform: rotate(45deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          img {
+            width: 80%;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    &Right {
+      a {
+        color: white;
+        text-decoration: none;
+        font-family: "Lato-Regular";
+        font-weight: normal;
+        font-size: 12px;
+        margin-left: 50px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
