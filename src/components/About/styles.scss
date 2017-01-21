@@ -1,0 +1,33 @@
+.about {
+  background-color: #f3f3f3;
+
+  .container {
+    width: 520px;
+    margin: 0 auto;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    h2 {
+      color: #333333;
+      font-family: "Lato-Regular";
+      font-weight: normal;
+      font-size: 30px;
+      text-transform: uppercase;
+      margin-bottom: 90px;
+    }
+
+    p {
+      color: #333333;
+      font-family: "Lato-Light";
+      font-weight: normal;
+      font-size: 18px;
+      margin-top: 50px;
+      text-align: center;
+    }
+  }
+}
