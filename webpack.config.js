@@ -64,7 +64,11 @@ module.exports = {
           options: {
             name: 'fonts/[hash].[ext]'
           }
-        }
+        },
+        {
+           test: /\.json$/,
+           use: 'json-loader'
+         }
     ],
   },
 

@@ -1,0 +1,126 @@
+.works {
+  .wrapper {
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      margin-bottom: -15px;
+    }
+  }
+
+  .grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    &Item {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 400px;
+        max-width: 33.33%;
+
+        .image {
+          display: flex;
+          position: relative;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          img {
+            width: 100%;
+            z-index: 0;
+          }
+
+          .whiteButton {
+            z-index: 1;
+            position: absolute;
+            cursor: pointer;
+            padding: 15px 20px;
+            border: 1px solid white;
+            text-decoration: none;
+            color: white;
+            font-family: "Lato-Regular";
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            text-transform: uppercase;
+            display: none;
+
+            &:after {
+              content: '';
+              background: url('../../images/arrow-right.png') no-repeat;
+              padding-left: 10px;
+              margin-left: 10px;
+            }
+          }
+        }
+        .description {
+          background-color: white;
+          padding: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 100%;
+
+          .title {
+            font-family: "Lato-Light";
+            font-weight: normal;
+            font-size: 18px;
+            text-transform: uppercase;
+            width: 100%;
+            margin: 0px;
+            margin-bottom: 10px;
+          }
+
+          .technology {
+            font-family: "Lato-Light";
+            font-weight: normal;
+            font-size: 16px;
+            width: 100%;
+            margin: 0px;
+          }
+        }
+    }
+    &Item:hover {
+      .image {
+        img {
+          filter: brightness(80%);
+        }
+
+        .whiteButton {
+          display: block;
+        }
+      }
+
+      .description {
+        background-color: #111111;
+        color: white;
+      }
+    }
+  }
+
+  .blackButton {
+    cursor: pointer;
+    padding: 15px 20px;
+    border: 1px solid #333333;
+    text-decoration: none;
+    color: #333333;
+    font-family: "Lato-Regular";
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+
+    &:after {
+      content: '';
+      background: url('../../images/arrow-rightBlack.png') no-repeat;
+      padding-left: 10px;
+      margin-left: 10px;
+    }
+  }
+}
