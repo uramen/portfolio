@@ -17,6 +17,9 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-2": "^6.13.0",
     "css-loader": "^0.23.1",
+    "eslint-config-xo": "^0.17.0",
+    "eslint-config-xo-react": "^0.10.0",
+    "eslint-plugin-react": "^6.9.0",
     "html-webpack-plugin": "^2.26.0",
     "html-webpack-template": "^6.0.0",
     "json-loader": "^0.5.4",
@@ -25,11 +28,32 @@
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
     "webpack": "^2.1.0-beta.25",
-    "webpack-dev-server": "^2.1.0-beta.0"
+    "webpack-dev-server": "^2.1.0-beta.0",
+    "xo": "^0.17.1"
   },
   "dependencies": {
     "normalize-scss": "^6.0.0",
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
+  },
+  "xo": {
+    "extends": "xo-react",
+    "plugins": [
+      "unicorn"
+    ],
+    "rules": {
+      "no-use-before-define": [
+        "off",
+        {
+          "functions": true, "classes": true
+        }
+      ],
+      "unicorn/filename-case": [
+        "off",
+        {
+          "case": "pascalCase"
+        }
+      ]
+    }
   }
 }

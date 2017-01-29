@@ -1,24 +1,25 @@
-import React, { Component } from 'react';
+import React, {Component, PropTypes} from 'react';
 
-export default class Title extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <h2 style={styles.title}>{this.props.children}</h2>
-    )
-  }
+class Title extends Component {
+	render() {
+		return (
+			<h2 style={styles.title}>{this.props.children}</h2>
+		);
+	}
 }
 
+Title.propTypes = {
+	children: PropTypes.node
+};
 
-var styles = {
-  title: {
-    color: "#333333",
-    fontFamily: "Lato-Regular",
-    fontWeight: "normal",
-    fontSize: "30px",
-    textTransform: "uppercase"
-  }
-}
+const styles = {
+	title: {
+		color: '#333333',
+		fontFamily: 'Lato-Regular',
+		fontWeight: 'normal',
+		fontSize: '30px',
+		textTransform: 'uppercase'
+	}
+};
+
+export default Title;
