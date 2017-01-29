@@ -4,6 +4,7 @@ import styles from './styles.scss';
 import Header from '../components/Header';
 import About from '../components/About';
 import Works from '../components/Works';
+import Proficiency from '../components/Proficiency';
 
 
 const App = () => (
@@ -11,6 +12,7 @@ const App = () => (
     <Header />
     <About />
     <Works />
+    <Proficiency />
   </div>
 );
 

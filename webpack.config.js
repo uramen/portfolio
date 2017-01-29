@@ -29,46 +29,44 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: [
-          'babel-loader',
-        ],
+        use: ['babel-loader'],
         exclude: /node_modules/
       },
       {
-          test: /\.(css|scss)$/,
-          use: [
-            'style-loader',
-            'css-loader?modules',
-            'sass-loader',
-          ]
+        test: /\.(css|scss)$/,
+        use: [
+          'style-loader',
+          'css-loader?modules',
+          'sass-loader',
+        ]
       },
       {
-          test: /.*\.(gif|png|jpe?g|svg)$/i,
-          loader: 'file-loader',
-          options: {
-            name: 'images/[hash].[ext]'
-          }
-        },
-        {
-          test: /\.woff$/,
-          loader: 'file-loader',
-          options: {
-            name: 'fonts/[hash].[ext]',
-            limit: 5000,
-            mimetype: 'application/font-woff'
-          }
-        },
-        {
-          test: /\.ttf$|\.eot$/,
-          loader: 'file-loader',
-          options: {
-            name: 'fonts/[hash].[ext]'
-          }
-        },
-        {
-           test: /\.json$/,
-           use: 'json-loader'
-         }
+        test: /.*\.(gif|png|jpe?g|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: 'images/[hash].[ext]'
+        }
+      },
+      {
+        test: /\.woff$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[hash].[ext]',
+          limit: 5000,
+          mimetype: 'application/font-woff'
+        }
+      },
+      {
+        test: /\.ttf$|\.eot$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[hash].[ext]'
+        }
+      },
+      {
+         test: /\.json$/,
+         use: 'json-loader'
+      }
     ],
   },
 

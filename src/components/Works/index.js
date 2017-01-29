@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './styles.scss';
 
-import Title from '../common/Title';
+import Title from '../About/components/Title';
 import ItemList from './components/ItemList';
 
 import data from './data.json';

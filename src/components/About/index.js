@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.scss';
 
-import Title from '../common/Title/index';
+import Title from './components/Title';
 
 const About = () => (
   <div className={styles.about}>
