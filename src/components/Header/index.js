@@ -8,13 +8,13 @@ const Header = () => (
 				<div className={styles.navigationLeft}>
 					<nav>
 						<a href="#">
-							<img src={require('../../images/github-6-24.png')}/>
+							<img src={require('../../assets/images/github-6-24.png')}/>
 						</a>
 						<a href="#">
-							<img src={require('../../images/instagram-24.png')}/>
+							<img src={require('../../assets/images/instagram-24.png')}/>
 						</a>
 						<a href="#">
-							<img src={require('../../images/white-vkcom-24.png')}/>
+							<img src={require('../../assets/images/white-vkcom-24.png')}/>
 						</a>
 					</nav>
 				</div>
@@ -34,9 +34,9 @@ const Header = () => (
 			</div>
 			<div className={styles.mouse}>
 				<a href="#">
-					<img src={require('../../images/mouse.png')}/>
+					<img src={require('../../assets/images/mouse.png')}/>
 					<h5>scroll down</h5>
-					<img src={require('../../images/arrow.png')}/>
+					<img src={require('../../assets/images/arrow.png')}/>
 				</a>
 			</div>
 		</div>
