@@ -1,0 +1,12 @@
+[ignore]
+.*/node_modules/*
+dist/*
+
+[options]
+munge_underscores=true
+esproposal.class_instance_fields=enable
+esproposal.class_static_fields=enable
+sharedmemory.hash_table_pow=19
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.scss
